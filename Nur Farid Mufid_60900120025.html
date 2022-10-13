@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabel Urut dari A - Z</title>
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p>Klik tombol untuk mengurutkan tabel menurut abjad, berdasarkan Nama (AZ-Z):</p>
+<p><button onclick="urutTable1()">Sort</button></p>
+
+<table id="Tabel1">
+  <tr>
+    <th>Nama</th>
+    <th>Nim</th>
+    <th>Alamat</th>
+    <th>Tempat, Tanggal Lahir</th>
+    <th>Jurusan</th>
+  </tr>
+  <tr>
+    <td>Nur Islamia Tuljanna</td>
+    <td>60900119036</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Andi Fitria Ramadhani</td>
+    <td>60900119040</td>
+    <td>Manding</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Muqaddimah</td>
+    <td>60900119042</td>
+    <td>Madatte</td>
+    <td>Makassar, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Andi Risydah Muayyadah</td>
+    <td>60900119049</td>
+    <td>Madatte</td>
+    <td>Gowa, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Dian Reski Amanda</td>
+    <td>60900119051</td>
+    <td>Patlas</td>
+    <td>Jeneponto, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUIZ MUHARRAM</td>
+    <td>60900120016</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD ALIEF DAFFA RIVAI</td>
+    <td>60900120019</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>M.FAJRATULIKHSAN</td>
+    <td>60900120020</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NABILAH FAQITA MASYORA</td>
+    <td>60900120022</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>ASWAR FAJAR</td>
+    <td>60900120023</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SERLIANA</td>
+    <td>60900120024</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NUR FARID MUFID NR</td>
+    <td>60900120025</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>RAHMADANI RAMLI</td>
+    <td>60900120027</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NADIAH ADAWIYAH FAHMI</td>
+    <td>60900120028</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Adam</td>
+    <td>60900120029</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>ANASTASYA PRAMESTI CAHYANI</td>
+    <td>60900120030</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MIFTAHUL FAUZI</td>
+    <td>60900120031</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NURFADILAH</td>
+    <td>60900120033</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Aliyah</td>
+    <td>60900120034</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD FIKRI</td>
+    <td>60900120035</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>AWWIR WAHYUDDIN</td>
+    <td>60900120036</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUTIARA ANDINI</td>
+    <td>60900120037</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>HAYAR USMAN</td>
+    <td>60900120038</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SUMIYATI</td>
+    <td>60900120039</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NUURAN AFIILA NURSYAM</td>
+    <td>60900120040</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD NUR AQIL SHODIQ AB</td>
+    <td>60900120041</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SYAHRUL</td>
+    <td>60900120042</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>IRMA SURIANI</td>
+    <td>60900120043</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD REYHAN AMAL</td>
+    <td>60900120044</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>IKMAL</td>
+    <td>60900120045</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+</table>
+
+<script>
+function urutTable1() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("Tabel1");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+<p>Table Ke 2</p>
+<p>Klik tombol untuk mengurutkan tabel menurut abjad, berdasarkan Nama (Z-A):</p>
+<p><button onclick="sortTable2()">Sort</button></p>
+
+<table id="myTable2">
+  <tr>
+    <th>Nama</th>
+    <th>Nim</th>
+    <th>Alamat</th>
+    <th>Tempat, Tanggal Lahir</th>
+    <th>Jurusan</th>
+  </tr>
+  <tr>
+    <td>Nur Islamia Tuljanna</td>
+    <td>60900119036</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Andi Fitria Ramadhani</td>
+    <td>60900119040</td>
+    <td>Manding</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Muqaddimah</td>
+    <td>60900119042</td>
+    <td>Madatte</td>
+    <td>Makassar, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Andi Risydah Muayyadah</td>
+    <td>60900119049</td>
+    <td>Madatte</td>
+    <td>Gowa, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Dian Reski Amanda</td>
+    <td>60900119051</td>
+    <td>Patlas</td>
+    <td>Jeneponto, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUIZ MUHARRAM</td>
+    <td>60900120016</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD ALIEF DAFFA RIVAI</td>
+    <td>60900120019</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>M.FAJRATULIKHSAN</td>
+    <td>60900120020</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NABILAH FAQITA MASYORA</td>
+    <td>60900120022</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>ASWAR FAJAR</td>
+    <td>60900120023</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SERLIANA</td>
+    <td>60900120024</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NUR FARID MUFID NR</td>
+    <td>60900120025</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>RAHMADANI RAMLI</td>
+    <td>60900120027</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NADIAH ADAWIYAH FAHMI</td>
+    <td>60900120028</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Adam</td>
+    <td>60900120029</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>ANASTASYA PRAMESTI CAHYANI</td>
+    <td>60900120030</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MIFTAHUL FAUZI</td>
+    <td>60900120031</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NURFADILAH</td>
+    <td>60900120033</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>Aliyah</td>
+    <td>60900120034</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD FIKRI</td>
+    <td>60900120035</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>AWWIR WAHYUDDIN</td>
+    <td>60900120036</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUTIARA ANDINI</td>
+    <td>60900120037</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>HAYAR USMAN</td>
+    <td>60900120038</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SUMIYATI</td>
+    <td>60900120039</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>NUURAN AFIILA NURSYAM</td>
+    <td>60900120040</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD NUR AQIL SHODIQ AB</td>
+    <td>60900120041</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>SYAHRUL</td>
+    <td>60900120042</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>IRMA SURIANI</td>
+    <td>60900120043</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>MUHAMMAD REYHAN AMAL</td>
+    <td>60900120044</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+  <tr>
+    <td>IKMAL</td>
+    <td>60900120045</td>
+    <td>Madatte</td>
+    <td>Polewali, </td>
+    <td>Sistem Informasi</td>
+  </tr>
+</table>
+
+<script>
+function sortTable2() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable2");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i + 1].getElementsByTagName("TD")[0];
+      y = rows[i].getElementsByTagName("TD")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+

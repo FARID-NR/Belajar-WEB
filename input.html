@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input data Mahasiswa</title>
+    </head>
+    <body>
+        <form method="post" action="simpan.php">
+            <table>
+                <tr><td>Nama</td><td><input type="text" onkeyup="isi_otomatis()" name="nim"></td></tr>
+                <tr><td>Alamat</td><td><input type="text" name="nama"></td></tr>
+                <tr><td>Jenis Kelamin</td><td>
+                        <input type="radio" name="jenis_kelamin" value="L">Laki-Laki
+                        <input type="radio" name="jenis_kelamin" value="P">Perempuan
+                    </td></tr>
+                <tr><td>Pekerjaan</td><td>
+                        <select name="jurusan">
+                            <option value="TEKNIK MESIN">Pelajar</option>
+                            <option value="TEKNIK KIMIA">Tentara</option>
+                            <option value="TEKNIK MESIN">Polisi</option>
+                            <option value="TEKNIK KIMIA">Dokter</option>
+                            <option value="TEKNIK MESIN">Guru</option>
+                            <option value="TEKNIK KIMIA">Petani</option>
+                            <option value="TEKNIK MESIN">Wirausaha</option>
+                            <option value="TEKNIK KIMIA">Artis</option>
+                            <option value="TEKNIK MESIN">Pembalap</option>
+                            <option value="TEKNIK KIMIA">Koki</option>
+                        </select>
+                    </td></tr>
+                <tr><td>Hobi</td><td>
+                    <input type="checkbox" name="hobi">Basket
+                    <input type="checkbox" name="hobi">Futsal
+                    <input type="checkbox" name="hobi">Takraw
+                    <input type="checkbox" name="hobi">Tenis
+                    <input type="checkbox" name="hobi">Renang
+                    <input type="checkbox" name="hobi">jump
+                    <input type="checkbox" name="hobi">Baca
+                    <input type="checkbox" name="hobi">Camp
+                    <input type="checkbox" name="hobi">Turu
+                    <input type="checkbox" name="hobi">Travel
+                </td></tr>
+                <tr><td colspan="2"><button type="submit" value="simpan">SIMPAN</button></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
